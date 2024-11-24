@@ -7,7 +7,7 @@ public struct Emoji: Hashable, Identifiable {
     public let id = UUID()
     
     /// The String value of the emoji.
-    public let value: String
+    public let value: String?
     
     /// The category of the emoji.
     public let category: String
