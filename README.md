@@ -1,20 +1,16 @@
-# EmojiPicker
+# 🤠 Paradox Emoji Picker
+### ➡️ Forked From Mihai Petrenco's ([@mpetrenco](https://github.com/mpetrenco)) Emoji Picker [Repo](https://github.com/mpetrenco/EmojiPicker)
+---------
 
 <p align="center">
-<img src="https://iili.io/dlORHX9.md.png" alt="Demo of the Emoji Picker UI.">
+  <img src="https://github.com/user-attachments/assets/39149c11-7990-406f-9667-b0db2e2ca27a" 
+       alt="Example of the Paradox Emoji Picker being used in Radar's iOS app."
+       style="max-width: 200px; width: 40%; height: auto;">
 </p>
 
 <p align="center">
-An emoji picker built in SwiftUI, inspired by Apple's emoji keyboard.
+"i love emojis" -martino
 </p>
-
-## Note on Version 2.1:
-
-With the release of 2.0, I did what I was meaning to do for a long time - add Dark Mode support, remove the stupid navigation bar limitation from 1.0 _(due to my lack of SwiftUI knowledge)_, and improve the overall code quality.
-
-Version 2.1 is focused on overall performance improvements and should enable a smooth scrolling experience. It also adds haptic feedback for emoji/category selection.
-
-As such, I consider this more or less complete from my perspective. The code is licensed under MIT, so feel free to fork it, modify it and make it your own.
 
 ## How to use:
 
@@ -30,23 +26,22 @@ Add the `.emojiPicker(isDisplayed:onEmojiSelected:)` modifier to your view:
 
 ```swift
 struct ContentView: View {
+  @State var emojiValue = ""
+  @State var isDisplayed = false
     
-    @State var emojiValue = ""
-    @State var isDisplayed = false
-    
-    var body: some View {
-        VStack {
-            Text(emojiValue)
-            Button("Select Emoji") {
-                isDisplayed.toggle()
-            }
-        }
-        .emojiPicker(isDisplayed: $isDisplayed) { emoji in
-            emojiValue = emoji.value
-        }
+  var body: some View {
+    VStack {
+      Text(emojiValue)
+      Button("Select Emoji") {
+        isDisplayed.toggle()
+      }
     }
-}
+    .emojiPicker(isDisplayed: $isDisplayed) { emoji in
+      emojiValue = emoji?.value
+    } // .emojiPicker
+  } // body
+} // ContentView (struct)
 ```
 
-__NOTE:__  
-> The Emoji Picker slides from the bottom of your current view. Please ensure that your view takes up the whole height of the screen.
+__STEP 3:__  
+Bing, Bang, Boom, you're done! 💥
