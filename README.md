@@ -1,5 +1,5 @@
 # 🤠 Paradox Emoji Picker
-### ➡️ Forked From Mihai Petrenco's ([@mpetrenco](https://github.com/mpetrenco)) Emoji Picker [Repo](https://github.com/mpetrenco/EmojiPicker)
+### 💬 Forked From Mihai Petrenco's ([@mpetrenco](https://github.com/mpetrenco)) Emoji Picker [Repo](https://github.com/mpetrenco/EmojiPicker)
 ---------
 
 <p align="center">
@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-"i love emojis" -martino
+Example of Paradox's Emoji Picker Being Used In <a href="https://justuseradar.com">Radar</a>
 </p>
 
 ## How to use:
