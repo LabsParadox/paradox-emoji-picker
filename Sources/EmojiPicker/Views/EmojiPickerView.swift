@@ -114,7 +114,7 @@ extension EmojiPickerView {
         onDismiss()
       } label: {
         Image(systemName: "checkmark.circle.fill")
-          .font(.system(size: 28))
+          .font(.system(size: 32))
           .symbolRenderingMode(.multicolor)
           .foregroundStyle(.blue)
       } // Button (check)
