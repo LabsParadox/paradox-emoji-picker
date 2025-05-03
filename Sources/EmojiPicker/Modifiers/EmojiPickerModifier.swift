@@ -19,13 +19,18 @@ struct EmojiPickerModifier: ViewModifier {
   // MARK: - Body
   
   public func body(content: Content) -> some View {
-    content
-      .sheet(isPresented: $isDisplayed) {
+    ZStack(alignment: .bottom) {
+      content
+      if isDisplayed {
         EmojiPickerView(
           onEmojiSelected: { emoji in
             onEmojiSelected(emoji)
-          }
+          },
+          onDismiss: { isDisplayed = false }
         )
-      } // .sheet
+        .transition(.move(edge: .bottom).combined(with: .opacity))
+        .animation(.easeInOut(duration: 0.25), value: isDisplayed)
+      } // if (isDisplayed)
+    } // ZStack
   } // body
 } // EmojiPickerModifier (struct)

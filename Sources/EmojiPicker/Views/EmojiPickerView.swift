@@ -4,108 +4,122 @@ struct EmojiPickerView: View {
   // MARK: - Properties
 
   private let onEmojiSelected: (Emoji?) -> Void
-  private let categories = EmojiRepository.shared.categories
+  private let onDismiss: () -> Void
   private let emojis = EmojiRepository.shared.emojis
 
   // MARK: - Observables
 
   @Environment(\.dismiss) private var dismiss
+
+  @FocusState private var isSearchFocused: Bool
+
   @State private var sectionTitle = ""
+  @State private var searchText = ""
+
+  private var filteredEmojis: [Emoji] {
+    guard !searchText.isEmpty else { return emojis }
+    let query = searchText.lowercased()
+    return emojis.filter { emoji in
+      emoji.value?.contains(query) == true ||
+        emoji.description.lowercased().contains(query) ||
+        emoji.aliases.contains(where: { $0.contains(query) }) ||
+        emoji.tags.contains(where: { $0.contains(query) })
+    }
+  } // filteredEmojis (var)
 
   // MARK: - Initializers
 
   init(
-    onEmojiSelected: @escaping (Emoji?) -> Void
+    onEmojiSelected: @escaping (Emoji?) -> Void,
+    onDismiss: @escaping () -> Void
   ) {
     self.onEmojiSelected = onEmojiSelected
+    self.onDismiss = onDismiss
   }
 
   // MARK: - Body
 
   var body: some View {
-    if #available(iOS 16.0, *) {
-      NavigationStack {
-        VStack(spacing: .small) {
-          sectionTitleText
-          emojiGrid()
-          sectionSelectionView
+    VStack {
+      searchBar
+        .padding(.horizontal, .small)
+
+      if filteredEmojis.isEmpty {
+        HStack {
+          Text("No Results")
+            .foregroundStyle(.secondary)
+            .font(.subheadline)
+            .frame(maxWidth: .infinity, alignment: .center)
         }
-        .padding(.horizontal)
-        .presentationDetents([.fraction(0.45)])
-        .presentationDragIndicator(.visible)
-        .toolbar {
-          ToolbarItem(placement: .navigationBarLeading) {
-            Button("Clear") {
-              onEmojiSelected(nil)
-              dismiss()
-            }
-          } // ToolbarItem
-        } // .toolbar
-      } // NavigationStack
-    } // if #available
+        .frame(height: 32)
+      } else {
+        ScrollView(.horizontal, showsIndicators: false) {
+          HStack(spacing: 8) {
+            ForEach(filteredEmojis) { emoji in
+              Button {
+                onEmojiSelected(emoji)
+              } label: {
+                Text(emoji.value ?? "")
+                  .font(.system(size: 32))
+                  .frame(width: 44, height: 44)
+              } // Button
+            } // ForEach
+          } // HStack
+        } // ScrollView
+        .frame(height: 32)
+        .padding(.leading, .extraSmall)
+      } // if/else (filteredEmojis.isEmpty)
+    } // VStack
+    .padding(.vertical, 8)
+    .background(.ultraThinMaterial)
+    .onAppear { isSearchFocused = true }
+    .onChange(of: isSearchFocused) {
+      if !isSearchFocused {
+        onDismiss()
+      }
+    } // .onChange
   } // body
 } // EmojiPickerView (struct)
 
 extension EmojiPickerView {
-  private var sectionTitleText: some View {
-    Text(sectionTitle.uppercased())
-      .font(.EmojiPicker.caption)
-      .foregroundStyle(.EmojiPicker.secondary)
-      .padding(.bottom, .medium)
-  }
+  private var searchBar: some View {
+    HStack(alignment: .center) {
+      HStack {
+        Image(systemName: "magnifyingglass")
+          .foregroundStyle(.secondary)
 
-  private var sectionSelectionView: some View {
-    HStack(spacing: .zero) {
-      ForEach(categories) { category in
-        Spacer()
-        sectionButton(category: category)
-      }
-      Spacer()
-    }
-  }
+        TextField("Describe an Emoji", text: $searchText)
+          .textInputAutocapitalization(.never)
+          .disableAutocorrection(true)
+          .keyboardType(.asciiCapable)
+          .focused($isSearchFocused)
 
-  private func sectionButton(category: EmojiCategory) -> some View {
-    Button(
-      action: {
-        NotificationCenter.default.post(
-          name: .categorySelected,
-          object: nil,
-          userInfo: ["name": category.title]
-        )
-      },
-      label: {
-        Image(category.iconName, bundle: .module)
-          .resizable()
-          .aspectRatio(contentMode: .fit)
-          .frame(width: .medium, height: .medium)
-          .foregroundColor(
-            category.title == sectionTitle
-              ? .EmojiPicker.primary
-              : .EmojiPicker.secondary
-          )
-          .padding(.small)
-          .background(
-            category.title == sectionTitle
-              ? .EmojiPicker.highlight
-              : .EmojiPicker.background
-          )
-          .clipShape(Circle())
-      }
-    )
-  }
+        if !searchText.isEmpty {
+          Button {
+            searchText = ""
+          } label: {
+            Image(systemName: "xmark.circle.fill")
+              .foregroundStyle(.secondary)
+          } // Button (x)
+          .buttonStyle(.plain)
+        } // if (!searchText.isEmpty)
+      } // HStack
+      .padding(.horizontal, .small)
+      .frame(height: 36)
+      .background(.background)
+      .clipShape(Capsule())
 
-  private func emojiGrid() -> some View {
-    EmojiPickerGridView(
-      with: emojis,
-      width: UIScreen.main.bounds.width,
-      onEmojiAppeared: { emoji in
-        sectionTitle = emoji.category
-      },
-      onEmojiSelected: { emoji in
-        onEmojiSelected(emoji)
-        dismiss()
-      }
-    )
-    .padding(.bottom, .medium)
-  }
-}
+      Button {
+        isSearchFocused = false
+        onDismiss()
+      } label: {
+        Image(systemName: "checkmark.circle.fill")
+          .font(.system(size: 28))
+          .symbolRenderingMode(.multicolor)
+          .foregroundStyle(.blue)
+      } // Button (check)
+      .buttonStyle(.plain)
+      .frame(width: 36, height: 36)
+    } // HStack
+  } // searchBar
+} // EmojiPickerView (extension)
