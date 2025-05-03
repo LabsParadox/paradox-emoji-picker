@@ -2195,12 +2195,8 @@
     "emoji": "🖕"
   , "description": "middle finger"
   , "category": "People & Body"
-  , "aliases": [
-      "middle_finger"
-    , "fu"
-    ]
-  , "tags": [
-    ]
+  , "aliases": ["middle_finger"]
+  , "tags": ["fuck", "bird", "flip"]
   , "unicode_version": "7.0"
   , "ios_version": "9.1"
   , "skin_tones": true
@@ -22649,5 +22645,734 @@
     ]
   , "unicode_version": "11.0"
   , "ios_version": "12.1"
-  }
+  },
+{
+  "emoji": "😶‍🌫️",
+  "description": "face in clouds",
+  "category": "Smileys & Emotion",
+  "aliases": ["face_in_clouds"],
+  "tags": [],
+  "unicode_version": "13.1",
+  "ios_version": "14.5"
+},
+{
+  "emoji": "😮‍💨",
+  "description": "face exhaling",
+  "category": "Smileys & Emotion",
+  "aliases": ["face_exhaling"],
+  "tags": ["tired"],
+  "unicode_version": "13.1",
+  "ios_version": "14.5"
+},
+{
+  "emoji": "😵‍💫",
+  "description": "face with spiral eyes",
+  "category": "Smileys & Emotion",
+  "aliases": ["face_with_spiral_eyes"],
+  "tags": ["dizzy"],
+  "unicode_version": "13.1",
+  "ios_version": "14.5"
+},
+{
+  "emoji": "❤️‍🔥",
+  "description": "heart on fire",
+  "category": "Smileys & Emotion",
+  "aliases": ["heart_on_fire"],
+  "tags": [],
+  "unicode_version": "13.1",
+  "ios_version": "14.5"
+},
+{
+  "emoji": "❤️‍🩹",
+  "description": "mending heart",
+  "category": "Smileys & Emotion",
+  "aliases": ["mending_heart"],
+  "tags": [],
+  "unicode_version": "13.1",
+  "ios_version": "14.5"
+},
+{
+  "emoji": "🫠",
+  "description": "melting face",
+  "category": "Smileys & Emotion",
+  "aliases": ["melting_face"],
+  "tags": [],
+  "unicode_version": "14.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🫢",
+  "description": "face with open eyes and hand over mouth",
+  "category": "Smileys & Emotion",
+  "aliases": ["face_with_open_eyes_and_hand_over_mouth"],
+  "tags": [],
+  "unicode_version": "14.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🫣",
+  "description": "face with peeking eye",
+  "category": "Smileys & Emotion",
+  "aliases": ["face_with_peeking_eye"],
+  "tags": [],
+  "unicode_version": "14.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🫡",
+  "description": "saluting face",
+  "category": "Smileys & Emotion",
+  "aliases": ["saluting_face"],
+  "tags": [],
+  "unicode_version": "14.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🫥",
+  "description": "dotted line face",
+  "category": "Smileys & Emotion",
+  "aliases": ["dotted_line_face"],
+  "tags": [],
+  "unicode_version": "14.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🫤",
+  "description": "face with diagonal mouth",
+  "category": "Smileys & Emotion",
+  "aliases": ["face_with_diagonal_mouth"],
+  "tags": [],
+  "unicode_version": "14.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🥹",
+  "description": "face holding back tears",
+  "category": "Smileys & Emotion",
+  "aliases": ["face_holding_back_tears"],
+  "tags": [],
+  "unicode_version": "14.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🫱",
+  "description": "rightwards hand",
+  "category": "People & Body",
+  "aliases": ["rightwards_hand"],
+  "tags": [],
+  "unicode_version": "14.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🫲",
+  "description": "leftwards hand",
+  "category": "People & Body",
+  "aliases": ["leftwards_hand"],
+  "tags": [],
+  "unicode_version": "14.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🫳",
+  "description": "palm down hand",
+  "category": "People & Body",
+  "aliases": ["palm_down_hand"],
+  "tags": [],
+  "unicode_version": "14.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🫴",
+  "description": "palm up hand",
+  "category": "People & Body",
+  "aliases": ["palm_up_hand"],
+  "tags": [],
+  "unicode_version": "14.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🫰",
+  "description": "hand with index finger and thumb crossed",
+  "category": "People & Body",
+  "aliases": ["hand_with_index_finger_and_thumb_crossed"],
+  "tags": [],
+  "unicode_version": "14.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🫵",
+  "description": "index pointing at the viewer",
+  "category": "People & Body",
+  "aliases": ["index_pointing_at_the_viewer"],
+  "tags": [],
+  "unicode_version": "14.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🫶",
+  "description": "heart hands",
+  "category": "People & Body",
+  "aliases": ["heart_hands"],
+  "tags": [],
+  "unicode_version": "14.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🫦",
+  "description": "biting lip",
+  "category": "People & Body",
+  "aliases": ["biting_lip"],
+  "tags": [],
+  "unicode_version": "14.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🫅",
+  "description": "person with crown",
+  "category": "People & Body",
+  "aliases": ["person_with_crown"],
+  "tags": [],
+  "unicode_version": "14.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🫃",
+  "description": "pregnant man",
+  "category": "People & Body",
+  "aliases": ["pregnant_man"],
+  "tags": [],
+  "unicode_version": "14.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🫄",
+  "description": "pregnant person",
+  "category": "People & Body",
+  "aliases": ["pregnant_person"],
+  "tags": [],
+  "unicode_version": "14.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🧌",
+  "description": "troll",
+  "category": "People & Body",
+  "aliases": ["troll"],
+  "tags": [],
+  "unicode_version": "14.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🪸",
+  "description": "coral",
+  "category": "Animals & Nature",
+  "aliases": ["coral"],
+  "tags": [],
+  "unicode_version": "14.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🪷",
+  "description": "lotus",
+  "category": "Animals & Nature",
+  "aliases": ["lotus"],
+  "tags": [],
+  "unicode_version": "14.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🪹",
+  "description": "empty nest",
+  "category": "Animals & Nature",
+  "aliases": ["empty_nest"],
+  "tags": ["bird"],
+  "unicode_version": "14.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🪺",
+  "description": "nest with eggs",
+  "category": "Animals & Nature",
+  "aliases": ["nest_with_eggs"],
+  "tags": ["bird"],
+  "unicode_version": "14.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🫘",
+  "description": "beans",
+  "category": "Food & Drink",
+  "aliases": ["beans"],
+  "tags": [],
+  "unicode_version": "14.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🫗",
+  "description": "pouring liquid",
+  "category": "Food & Drink",
+  "aliases": ["pouring_liquid"],
+  "tags": ["spill"],
+  "unicode_version": "14.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🫙",
+  "description": "jar",
+  "category": "Food & Drink",
+  "aliases": ["jar"],
+  "tags": [],
+  "unicode_version": "14.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🛝",
+  "description": "playground slide",
+  "category": "Travel & Places",
+  "aliases": ["playground_slide"],
+  "tags": [],
+  "unicode_version": "14.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🛞",
+  "description": "wheel",
+  "category": "Travel & Places",
+  "aliases": ["wheel"],
+  "tags": [],
+  "unicode_version": "14.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🛟",
+  "description": "ring buoy",
+  "category": "Travel & Places",
+  "aliases": ["ring_buoy"],
+  "tags": [],
+  "unicode_version": "14.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🪩",
+  "description": "mirror ball",
+  "category": "Objects",
+  "aliases": ["mirror_ball"],
+  "tags": [],
+  "unicode_version": "14.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🪫",
+  "description": "low battery",
+  "category": "Objects",
+  "aliases": ["low_battery"],
+  "tags": [],
+  "unicode_version": "14.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🩼",
+  "description": "crutch",
+  "category": "Objects",
+  "aliases": ["crutch"],
+  "tags": [],
+  "unicode_version": "14.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🩻",
+  "description": "x-ray",
+  "category": "Objects",
+  "aliases": ["x_ray"],
+  "tags": [],
+  "unicode_version": "14.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🫧",
+  "description": "bubbles",
+  "category": "Objects",
+  "aliases": ["bubbles"],
+  "tags": [],
+  "unicode_version": "14.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🪬",
+  "description": "hamsa",
+  "category": "Symbols",
+  "aliases": ["hamsa"],
+  "tags": [],
+  "unicode_version": "14.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🪪",
+  "description": "identification card",
+  "category": "Objects",
+  "aliases": ["identification_card"],
+  "tags": ["drivers", "license", "id"],
+  "unicode_version": "14.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🟰",
+  "description": "heavy equals sign",
+  "category": "Symbols",
+  "aliases": ["heavy_equals_sign"],
+  "tags": [],
+  "unicode_version": "14.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🫨",
+  "description": "shaking face",
+  "category": "Smileys & Emotion",
+  "aliases": ["shaking_face"],
+  "tags": [],
+  "unicode_version": "15.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🩷",
+  "description": "pink heart",
+  "category": "Smileys & Emotion",
+  "aliases": ["pink_heart"],
+  "tags": [],
+  "unicode_version": "15.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🩵",
+  "description": "light blue heart",
+  "category": "Smileys & Emotion",
+  "aliases": ["light_blue_heart"],
+  "tags": [],
+  "unicode_version": "15.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🩶",
+  "description": "grey heart",
+  "category": "Smileys & Emotion",
+  "aliases": ["grey_heart"],
+  "tags": [],
+  "unicode_version": "15.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🫷",
+  "description": "leftwards pushing hand",
+  "category": "People & Body",
+  "aliases": ["leftwards_pushing_hand"],
+  "tags": [],
+  "unicode_version": "15.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🫸",
+  "description": "rightwards pushing hand",
+  "category": "People & Body",
+  "aliases": ["rightwards_pushing_hand"],
+  "tags": [],
+  "unicode_version": "15.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🫎",
+  "description": "moose",
+  "category": "Animals & Nature",
+  "aliases": ["moose"],
+  "tags": [],
+  "unicode_version": "15.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🫏",
+  "description": "donkey",
+  "category": "Animals & Nature",
+  "aliases": ["donkey"],
+  "tags": [],
+  "unicode_version": "15.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🪽",
+  "description": "wing",
+  "category": "Animals & Nature",
+  "aliases": ["wing"],
+  "tags": [],
+  "unicode_version": "15.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🐦‍⬛",
+  "description": "black bird",
+  "category": "Animals & Nature",
+  "aliases": ["black_bird"],
+  "tags": [],
+  "unicode_version": "15.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🪿",
+  "description": "goose",
+  "category": "Animals & Nature",
+  "aliases": ["goose"],
+  "tags": [],
+  "unicode_version": "15.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🪼",
+  "description": "jellyfish",
+  "category": "Animals & Nature",
+  "aliases": ["jellyfish"],
+  "tags": [],
+  "unicode_version": "15.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🪻",
+  "description": "hyacinth",
+  "category": "Animals & Nature",
+  "aliases": ["hyacinth"],
+  "tags": [],
+  "unicode_version": "15.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🫚",
+  "description": "ginger root",
+  "category": "Food & Drink",
+  "aliases": ["ginger_root"],
+  "tags": [],
+  "unicode_version": "15.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🫛",
+  "description": "pea pod",
+  "category": "Food & Drink",
+  "aliases": ["pea_pod"],
+  "tags": [],
+  "unicode_version": "15.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🪭",
+  "description": "folding hand fan",
+  "category": "Objects",
+  "aliases": ["folding_hand_fan"],
+  "tags": [],
+  "unicode_version": "15.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🪮",
+  "description": "hair pick",
+  "category": "Objects",
+  "aliases": ["hair_pick"],
+  "tags": ["comb"],
+  "unicode_version": "15.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🪇",
+  "description": "maracas",
+  "category": "Objects",
+  "aliases": ["maracas"],
+  "tags": ["instrument"],
+  "unicode_version": "15.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🪈",
+  "description": "flute",
+  "category": "Objects",
+  "aliases": ["flute"],
+  "tags": ["instrument"],
+  "unicode_version": "15.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🪯",
+  "description": "khanda",
+  "category": "Symbols",
+  "aliases": ["khanda"],
+  "tags": [],
+  "unicode_version": "15.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🛜",
+  "description": "wireless",
+  "category": "Objects",
+  "aliases": ["wireless"],
+  "tags": ["wifi"],
+  "unicode_version": "15.0",
+  "ios_version": "16.4"
+},
+{
+  "emoji": "🙂‍↔️",
+  "description": "head shaking horizontally",
+  "category": "Smileys & Emotion",
+  "aliases": ["head_shaking_horizontally"],
+  "tags": [],
+  "unicode_version": "15.1",
+  "ios_version": "17.4"
+},
+{
+  "emoji": "🙂‍↕️",
+  "description": "head shaking vertically",
+  "category": "Smileys & Emotion",
+  "aliases": ["head_shaking_vertically"],
+  "tags": [],
+  "unicode_version": "15.1",
+  "ios_version": "17.4"
+},
+{
+  "emoji": "🐦‍🔥",
+  "description": "phoenix",
+  "category": "Animals & Nature",
+  "aliases": ["phoenix"],
+  "tags": ["bird"],
+  "unicode_version": "15.1",
+  "ios_version": "17.4"
+},
+{
+  "emoji": "🍋‍🟩",
+  "description": "lime",
+  "category": "Food & Drink",
+  "aliases": ["lime"],
+  "tags": [],
+  "unicode_version": "15.1",
+  "ios_version": "17.4"
+},
+{
+  "emoji": "🍄‍🟫",
+  "description": "brown mushroom",
+  "category": "Food & Drink",
+  "aliases": ["brown_mushroom"],
+  "tags": [],
+  "unicode_version": "15.1",
+  "ios_version": "17.4"
+},
+{
+  "emoji": "⛓️‍💥",
+  "description": "broken chain",
+  "category": "Objects",
+  "aliases": ["broken_chain"],
+  "tags": [],
+  "unicode_version": "15.1",
+  "ios_version": "17.4"
+},
+{
+  "emoji": "🧑‍🧑‍🧒",
+  "description": "family: adult, adult, child",
+  "category": "People & Body",
+  "aliases": ["family_adult_adult_child"],
+  "tags": [],
+  "unicode_version": "15.1",
+  "ios_version": "17.4"
+},
+{
+  "emoji": "🧑‍🧒‍🧒",
+  "description": "family: adult, child, child",
+  "category": "People & Body",
+  "aliases": ["family_adult_child_child"],
+  "tags": [],
+  "unicode_version": "15.1",
+  "ios_version": "17.4"
+},
+{
+  "emoji": "🧑‍🧒",
+  "description": "family: adult, child",
+  "category": "People & Body",
+  "aliases": ["family_adult_child"],
+  "tags": [],
+  "unicode_version": "15.1",
+  "ios_version": "17.4"
+},
+{
+  "emoji": "🧑‍🧑‍🧒‍🧒",
+  "description": "family: adult, adult, child, child",
+  "category": "People & Body",
+  "aliases": ["family_adult_adult_child_child"],
+  "tags": [],
+  "unicode_version": "15.1",
+  "ios_version": "17.4"
+},
+{
+  "emoji": "🫩",
+  "description": "face with bags under eyes",
+  "category": "Smileys & Emotion",
+  "aliases": ["face_with_bags_under_eyes"],
+  "tags": [],
+  "unicode_version": "16.0",
+  "ios_version": "17.4"
+},
+{
+  "emoji": "🫆",
+  "description": "fingerprint",
+  "category": "Objects",
+  "aliases": ["fingerprint"],
+  "tags": [],
+  "unicode_version": "16.0",
+  "ios_version": "17.4"
+},
+{
+  "emoji": "🪾",
+  "description": "leafless tree",
+  "category": "Animals & Nature",
+  "aliases": ["leafless_tree"],
+  "tags": [],
+  "unicode_version": "16.0",
+  "ios_version": "17.4"
+},
+{
+  "emoji": "🫜",
+  "description": "root vegetable",
+  "category": "Food & Drink",
+  "aliases": ["root_vegetable"],
+  "tags": [],
+  "unicode_version": "16.0",
+  "ios_version": "17.4"
+},
+{
+  "emoji": "🪉",
+  "description": "harp",
+  "category": "Objects",
+  "aliases": ["harp"],
+  "tags": [],
+  "unicode_version": "16.0",
+  "ios_version": "17.4"
+},
+{
+  "emoji": "🪏",
+  "description": "shovel",
+  "category": "Objects",
+  "aliases": ["shovel"],
+  "tags": [],
+  "unicode_version": "16.0",
+  "ios_version": "17.4"
+},
+{
+  "emoji": "🫟",
+  "description": "splatter",
+  "category": "Objects",
+  "aliases": ["splatter"],
+  "tags": [],
+  "unicode_version": "16.0",
+  "ios_version": "17.4"
+},
+{
+  "emoji": "🇨🇶",
+  "description": "flag: Sark",
+  "category": "Flags",
+  "aliases": ["flag_sark"],
+  "tags": [],
+  "unicode_version": "16.0",
+  "ios_version": "17.4"
+}
 ]

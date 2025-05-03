@@ -54,7 +54,7 @@ struct EmojiPickerView: View {
         .frame(height: 32)
       } else {
         ScrollView(.horizontal, showsIndicators: false) {
-          HStack(spacing: 8) {
+          LazyHStack(spacing: 8) {
             ForEach(filteredEmojis) { emoji in
               Button {
                 onEmojiSelected(emoji)
@@ -64,7 +64,7 @@ struct EmojiPickerView: View {
                   .frame(width: 44, height: 44)
               } // Button
             } // ForEach
-          } // HStack
+          } // LazyHStack
         } // ScrollView
         .frame(height: 32)
         .padding(.leading, .extraSmall)
