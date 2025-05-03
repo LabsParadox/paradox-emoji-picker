@@ -3,7 +3,7 @@
 ---------
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/5db43a24-f1c9-4e6a-acbd-151dc1b9ffa1" 
+  <img src="https://github.com/user-attachments/assets/c8a94e7f-2155-4cc4-83f4-67d14bdcd7fe" 
        alt="Example of the Paradox Emoji Picker being used in Radar's iOS app."
        style="max-width: 200px; width: 40%; height: auto;">
 </p>
