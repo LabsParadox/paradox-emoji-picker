@@ -15,17 +15,7 @@ struct EmojiPickerView: View {
 
   @State private var sectionTitle = ""
   @State private var searchText = ""
-
-  private var filteredEmojis: [Emoji] {
-    guard !searchText.isEmpty else { return emojis }
-    let query = searchText.lowercased()
-    return emojis.filter { emoji in
-      emoji.value?.contains(query) == true ||
-        emoji.description.lowercased().contains(query) ||
-        emoji.aliases.contains(where: { $0.contains(query) }) ||
-        emoji.tags.contains(where: { $0.contains(query) })
-    }
-  } // filteredEmojis (var)
+  @State private var filteredEmojis: [Emoji] = []
 
   // MARK: - Initializers
 
@@ -54,7 +44,7 @@ struct EmojiPickerView: View {
         .frame(height: 32)
       } else {
         ScrollView(.horizontal, showsIndicators: false) {
-          HStack(spacing: 8) {
+          LazyHStack(spacing: 8) {
             ForEach(filteredEmojis) { emoji in
               Button {
                 onEmojiSelected(emoji)
@@ -64,7 +54,7 @@ struct EmojiPickerView: View {
                   .frame(width: 44, height: 44)
               } // Button
             } // ForEach
-          } // HStack
+          } // LazyHStack
         } // ScrollView
         .frame(height: 32)
         .padding(.leading, .extraSmall)
@@ -72,13 +62,33 @@ struct EmojiPickerView: View {
     } // VStack
     .padding(.vertical, 8)
     .background(.ultraThinMaterial)
-    .onAppear { isSearchFocused = true }
+    .onAppear {
+      filteredEmojis = emojis
+      isSearchFocused = true
+    }
+    .onChange(of: searchText) {
+      updateFilteredEmojis()
+    }
     .onChange(of: isSearchFocused) {
       if !isSearchFocused {
         onDismiss()
       }
-    } // .onChange
+    }
   } // body
+
+  private func updateFilteredEmojis() {
+    let query = searchText.lowercased()
+    if query.isEmpty {
+      filteredEmojis = emojis
+    } else {
+      filteredEmojis = emojis.filter { emoji in
+        emoji.value?.contains(query) == true ||
+          emoji.description.lowercased().contains(query) ||
+          emoji.aliases.contains(where: { $0.contains(query) }) ||
+          emoji.tags.contains(where: { $0.contains(query) })
+      } // filteredEmojis...
+    } // if/else (query.isEmpty)
+  } // updateFilteredEmojis()
 } // EmojiPickerView (struct)
 
 extension EmojiPickerView {
